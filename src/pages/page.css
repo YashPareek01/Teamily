@@ -1,0 +1,21 @@
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-none {
+  flex: none;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-no-wrap {
+  flex-wrap: nowrap;
+}
+
+.w-full {
+  width: 100%;
+}
+
