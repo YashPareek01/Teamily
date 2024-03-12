@@ -5,6 +5,7 @@ import { Outlet } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import { FaBars } from 'react-icons/fa';
 import { ImCross } from 'react-icons/im';
+import showErrorMessage from '../pages/utils';
 
 export default function NavBar() {
     const [menuVisible, setMenuVisible] = useState(false);
@@ -50,13 +51,13 @@ export default function NavBar() {
                                     <Link to='Pricing' spy={true} smooth={true} offset={-100} duration={500} >Pricing</Link>
                                 </li >
                                 <li className=' nav-item cursor-pointer'>
-                                    <Link to='/Demo'>Demo</Link>
+                                    <Link to='/Demo' onClick={()=> showErrorMessage('Please try After Some Time')}>Demo</Link>
                                 </li>
                                 <li className=' nav-item cursor-pointer'>
-                                    <Link to='/Blogs'>Blogs</Link>
+                                    <Link to='/Blogs' onClick={()=> showErrorMessage('Please try After Some Time')}>Blogs</Link>
                                 </li>
                                 <li className=' nav-item cursor-pointer'>
-                                    <Link to='/ContactUs'>Contact Us</Link>
+                                    <Link to='/ContactUs' onClick={()=> showErrorMessage('Please try After Some Time')}>Contact Us</Link>
                                 </li>
                             </ul>
                             <div className='border w-fit rounded-lg p-2 pl-5 pr-5 bg-yellow-400 lg:ml-10  cursor-pointer'>

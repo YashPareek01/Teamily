@@ -3,6 +3,7 @@ import userImg from '../image/1077063 1.png';
 import monthImg from '../image/1077063 2.png';
 import totalImg from '../image/Rupess 1.png';
 import revImg from '../image/x.webp';
+import showErrorMessage from './utils';
 
 export default function Pricing() {
   const [selectedImage, setSelectedImage] = useState(1);
@@ -33,11 +34,11 @@ export default function Pricing() {
           <strong className='text-3xl'>SIMPLE PRICING</strong>
           <p className='text-xs p-4'>Choose extensions that match your business needs</p>
           <div className="flex justify-center items-center gap-2 text-xs">
-            <button className='flex flex-col bg-yellow-400 rounded-sm justify-center items-center p-2 hover:p-4 hover:shadow-2xl focus:outline-none focus:ring focus:ring-black'>
+            <button className='flex flex-col bg-yellow-400 rounded-sm justify-center items-center p-2 hover:p-4 hover:shadow-2xl focus:outline-none focus:ring focus:ring-black' onClick={()=>showErrorMessage('Please login first')}>
               <strong>Monthly</strong>
               <p>5$/- User Per Month</p>
             </button>
-            <button className='flex flex-col bg-black rounded-sm text-white justify-center items-center p-2 hover:p-4 hover:shadow-2xl focus:outline-none focus:ring focus:ring-yellow-400'>
+            <button className='flex flex-col bg-black rounded-sm text-white justify-center items-center p-2 hover:p-4 hover:shadow-2xl focus:outline-none focus:ring focus:ring-yellow-400' onClick={()=>showErrorMessage('Please login first')}>
               <strong>Yearly</strong>
               <p>4$/- User Per Month</p>
             </button>
@@ -92,7 +93,7 @@ export default function Pricing() {
                 </div>
               </div>
               <div className='flex justify-center items-center relative -top-4'>
-                <button className='bg-yellow-400 p-2 pl-4 pr-4 rounded'>Buy Now</button>
+                <button className='bg-yellow-400 p-2 pl-4 pr-4 rounded' onClick={()=>showErrorMessage('Please login first')}>Buy Now</button>
               </div>
               <div className='flex flex-col mt-12 justify-center items-center md:mt-20'>
                 <strong className='text-yellow-400 text-4xl'>REVIEWS</strong>

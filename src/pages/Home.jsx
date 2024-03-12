@@ -3,6 +3,7 @@ import About from './About';
 import sliderImage from '../image/Slider-IMages 1.png';
 import Pricing from './Pricing';
 import Footer from '../components/footer';
+import showErrorMessage from '../pages/utils';
 
 export default function Home() {
   const [currentSection, setCurrentSection] = useState(0)
@@ -37,7 +38,7 @@ export default function Home() {
                       A complete attendance management system that allow employee check-in and check-out with useful reports.
                     </span>
                     <div className='rounded text-white text-xs bg-yellow-400 w-fit p-1 mt-2 '>
-                      <button>REQUEST A DEMO</button>
+                      <button onClick={()=> showErrorMessage('Demo page is under Development')}>REQUEST A DEMO</button>
                     </div>
                   </div>
                 </section>
@@ -55,7 +56,7 @@ export default function Home() {
                       A complete attendance management system that allow employee check-in and check-out with useful reports.
                     </span>
                     <div className='rounded text-white text-xs bg-yellow-400 w-fit p-1 mt-2 '>
-                      <button>REQUEST A DEMO</button>
+                      <button onClick={()=> showErrorMessage('Demo page is under Development')}>REQUEST A DEMO</button>
                     </div>
                   </div>
                 </section>
@@ -73,7 +74,7 @@ export default function Home() {
                       A complete attendance management system that allow employee check-in and check-out with useful reports.
                     </div>
                     <div className='rounded text-white text-xs bg-yellow-400 w-fit p-1 mt-2 '>
-                      <button>REQUEST A DEMO</button>
+                      <button onClick={()=> showErrorMessage('Demo page is under Development')}>REQUEST A DEMO</button>
                     </div>
                   </div>
                 </section>
