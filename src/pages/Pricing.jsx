@@ -91,8 +91,8 @@ export default function Pricing() {
                   </div>
                 </div>
               </div>
-              <div>
-                <button>Demo</button>
+              <div className='flex justify-center items-center relative -top-4'>
+                <button className='bg-yellow-400 p-2 pl-4 pr-4 rounded'>Buy Now</button>
               </div>
               <div className='flex flex-col mt-12 justify-center items-center md:mt-20'>
                 <strong className='text-yellow-400 text-4xl'>REVIEWS</strong>
